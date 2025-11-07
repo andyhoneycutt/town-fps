@@ -11,14 +11,17 @@ func handle_move():
 	var camera_forward = -camera_transform.basis.z
 	var camera_right = camera_transform.basis.x
 	var input_vector = Vector3.ZERO
-	if Input.is_action_pressed("move_forward"):
-		input_vector += camera_forward
-	if Input.is_action_pressed("move_backward"):
-		input_vector -= camera_forward
-	if Input.is_action_pressed("move_left"):
-		input_vector -= camera_right
-	if Input.is_action_pressed("move_right"):
-		input_vector += camera_right
+	var moves = {
+		"move_forward": camera_forward,
+		"move_backward": -camera_forward,
+		"move_left": -camera_right,
+		"move_right": camera_right,
+	}
+
+	for action in moves:
+		if Input.is_action_pressed(action):
+			input_vector += moves[action]
+
 	input_vector = input_vector.normalized()
 
 	# Apply movement to the character (e.g., using move_and_slide or another physics method)
