@@ -1,0 +1,135 @@
+[gd_scene load_steps=15 format=3 uid="uid://dtpt2spnej41f"]
+
+[ext_resource type="PackedScene" uid="uid://cenhki8herend" path="res://Assets/city/gltf/base.gltf" id="1_dqi2h"]
+[ext_resource type="PackedScene" uid="uid://deg7f67qcxts1" path="res://Assets/city/gltf/building_G.gltf" id="2_wtxxi"]
+[ext_resource type="PackedScene" uid="uid://cgtrvrfo5bq16" path="res://Assets/city/gltf/building_A.gltf" id="3_0e1e8"]
+[ext_resource type="PackedScene" uid="uid://dvlf7iwquqq5l" path="res://Assets/city/gltf/building_C.gltf" id="4_octqf"]
+[ext_resource type="PackedScene" uid="uid://opbopvpn8vh4" path="res://Assets/city/gltf/building_D.gltf" id="5_de1yu"]
+[ext_resource type="PackedScene" uid="uid://d3wi0gutdp5wk" path="res://Assets/city/gltf/building_E.gltf" id="6_s8u2w"]
+[ext_resource type="PackedScene" uid="uid://dgdmwphmhy886" path="res://Assets/city/gltf/building_F.gltf" id="7_xuj5n"]
+[ext_resource type="PackedScene" uid="uid://xoyhl7043a78" path="res://Assets/city/gltf/building_H.gltf" id="8_oa11r"]
+[ext_resource type="PackedScene" uid="uid://byque4w54oowj" path="res://player/player.tscn" id="9_wabje"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dqi2h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dqi2h"]
+
+[sub_resource type="Environment" id="Environment_dqi2h"]
+ambient_light_source = 3
+ambient_light_color = Color(0.89751107, 0.9646478, 0.99999994, 1)
+reflected_light_source = 2
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_wtxxi"]
+
+[sub_resource type="Compositor" id="Compositor_0e1e8"]
+
+[node name="Level" type="Node3D"]
+
+[node name="buildings" type="Node3D" parent="."]
+
+[node name="building_G2" parent="buildings" instance=ExtResource("2_wtxxi")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9, 0, 2)
+
+[node name="building_A2" parent="buildings" instance=ExtResource("3_0e1e8")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7, 0, 2)
+
+[node name="building_C2" parent="buildings" instance=ExtResource("4_octqf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5, 0, 2)
+
+[node name="building_D2" parent="buildings" instance=ExtResource("5_de1yu")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3, 0, 2)
+
+[node name="building_E2" parent="buildings" instance=ExtResource("6_s8u2w")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1, 0, 2)
+
+[node name="building_F2" parent="buildings" instance=ExtResource("7_xuj5n")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1, 0, 2)
+
+[node name="building_E3" parent="buildings" instance=ExtResource("6_s8u2w")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3, 0, 2)
+
+[node name="base2" parent="buildings" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
+
+[node name="building_G3" parent="buildings" instance=ExtResource("2_wtxxi")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 7, 0, 2)
+
+[node name="building_H2" parent="buildings" instance=ExtResource("8_oa11r")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9, 0, 2)
+
+[node name="building_G4" parent="buildings" instance=ExtResource("2_wtxxi")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 9, 0, -2.000001)
+
+[node name="building_A3" parent="buildings" instance=ExtResource("3_0e1e8")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 7, 0, -2.0000005)
+
+[node name="building_C3" parent="buildings" instance=ExtResource("4_octqf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2.0000005)
+
+[node name="building_D3" parent="buildings" instance=ExtResource("5_de1yu")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 3, 0, -2.0000002)
+
+[node name="building_E4" parent="buildings" instance=ExtResource("6_s8u2w")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 1, 0, -2)
+
+[node name="building_F3" parent="buildings" instance=ExtResource("7_xuj5n")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1, 0, -2)
+
+[node name="building_E5" parent="buildings" instance=ExtResource("6_s8u2w")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -3, 0, -1.9999998)
+
+[node name="base3" parent="buildings" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -5, 0, -1.9999995)
+
+[node name="building_G5" parent="buildings" instance=ExtResource("2_wtxxi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -1.9999993)
+
+[node name="building_H3" parent="buildings" instance=ExtResource("8_oa11r")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -9, 0, -1.9999993)
+
+[node name="Player" parent="." instance=ExtResource("9_wabje")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.031720728, 0.16938293, 0.00937134)
+
+[node name="ground" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
+mesh = SubResource("PlaneMesh_dqi2h")
+
+[node name="base10" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="base11" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="base14" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="base15" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="base16" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="base17" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="base18" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="base19" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="base20" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="base21" parent="ground/MeshInstance3D" instance=ExtResource("1_dqi2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ground"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, -9.9, 0)
+shape = SubResource("BoxShape3D_dqi2h")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dqi2h")
+camera_attributes = SubResource("CameraAttributesPractical_wtxxi")
+compositor = SubResource("Compositor_0e1e8")
