@@ -29,5 +29,5 @@ func handle_move():
 	velocity.y = 0
 	move_and_slide()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	handle_move()
