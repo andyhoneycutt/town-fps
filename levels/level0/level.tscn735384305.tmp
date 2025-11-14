@@ -263,23 +263,23 @@ skeleton = NodePath("../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="buildings/BuildingD2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_khbp3")
 
-[node name="UnbuiltOne" type="MeshInstance3D" parent="buildings"]
+[node name="BuildingA2" type="MeshInstance3D" parent="buildings"]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 9, 0, -2.0000007)
 mesh = ExtResource("3_130sd")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_xuj5n")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="buildings/UnbuiltOne"]
+[node name="StaticBody3D" type="StaticBody3D" parent="buildings/BuildingA2"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="buildings/UnbuiltOne/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="buildings/BuildingA2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2qvtt")
-disabled = true
 
-[node name="Area3D" type="Area3D" parent="buildings/UnbuiltOne"]
+[node name="Area3D" type="Area3D" parent="buildings/BuildingA2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.464213, 0, -5.0278873)
 script = ExtResource("15_xuj5n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="buildings/UnbuiltOne/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.3288288)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="buildings/BuildingA2/Area3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 shape = SubResource("SphereShape3D_oa11r")
 
 [node name="BuildingB2" type="MeshInstance3D" parent="buildings"]
@@ -785,3 +785,11 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.695888, 0.099999905, -4.761701)
 mesh = ExtResource("14_xuj5n")
 skeleton = NodePath("../..")
+
+[node name="Area3D" type="Area3D" parent="interact"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.464213, 0, -5.0278873)
+script = ExtResource("15_xuj5n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="interact/Area3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("SphereShape3D_oa11r")

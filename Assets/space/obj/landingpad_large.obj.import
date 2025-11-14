@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cg2p4g6ysve8e"
+path="res://.godot/imported/landingpad_large.obj-f5d336e971cd0aeaf61709d9f4e7c7e6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/landingpad_large.obj-f5d336e971cd0aeaf61709d9f4e7c7e6.mesh"]
+
+source_file="res://Assets/space/obj/landingpad_large.obj"
+dest_files=["res://.godot/imported/landingpad_large.obj-f5d336e971cd0aeaf61709d9f4e7c7e6.mesh", "res://.godot/imported/landingpad_large.obj-f5d336e971cd0aeaf61709d9f4e7c7e6.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

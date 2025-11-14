@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b8isy66upggdv"
+path="res://.godot/imported/drill_structure.obj-3008d7036a6ac84269be1ef0610f935f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/drill_structure.obj-3008d7036a6ac84269be1ef0610f935f.mesh"]
+
+source_file="res://Assets/space/obj/drill_structure.obj"
+dest_files=["res://.godot/imported/drill_structure.obj-3008d7036a6ac84269be1ef0610f935f.mesh", "res://.godot/imported/drill_structure.obj-3008d7036a6ac84269be1ef0610f935f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

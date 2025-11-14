@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export var speed = 3.0
 @export var jump_velocity = 4.5
-@export var bricks = 10
+@export var bricks = 100
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
